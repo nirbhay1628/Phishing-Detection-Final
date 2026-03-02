@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGIPT MESS</title>
+    <link rel="stylesheet" href="Start.css">
+    <script src="Start.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="://rgipt.ac.in/en/article/home" target="_blank">
+                <img src="rgipt.png" alt="RGIPT Logo">
+            </a>
+        </div>
+        <h1>RGIPT MESS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="hle/home" target="_blank"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" id="menuToggle"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li><a href="#" id="commentToggle"><i class="fas fa-comment"></i> Comment</a></li>
+            <li><a href="#" id="foodAtRoomToggle"><i class="fas fa-pizza-slice"></i> Food@Room</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="menuCard" class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Snacks</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Menu data will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="commentCard" class="card">
+            <textarea placeholder="Write your review"></textarea>
+        </div>
+        <div id="foodAtRoomCard" class="card">
+            <form>
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <label for="roomNo">Room Number: <span class="required">*</span></label>
+                <input type="text" id="roomNo" name="roomNo" required>
+                <label for="doctorSlip">Doctor Slip: (Optional)</label>
+                <input type="file" id="doctorSlip" name="doctorSlip">
+                <button type="submit" id="submitBtn" disabled>Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

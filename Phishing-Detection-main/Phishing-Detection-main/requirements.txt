@@ -1,0 +1,16 @@
+python-dotenv  #to call environment variables
+pandas
+numpy
+pymongo
+certifi
+pymongo[srv]
+scikit-learn
+dill
+mlflow
+pyaml
+dagshub
+fastapi
+uvicorn
+python-multipart
+
+## -e . #this is responsible for event triggering in setup.py ... automatically printing all the entire packages
